@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Sentiment Analyzer</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <h1>Analyze Your Text Sentiment</h1>
+    </section>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Enter Text for Sentiment Analysis</span>
+                <form id="sentiment-form">
+                    <div class="input-field">
+                        <textarea id="text-input" class="materialize-textarea" rows="4" placeholder="Type your text here..."></textarea>
+                        
+                    </div>
+                    <button type="submit" class="btn">Analyze</button>
+                </form>
+                <div id="result" class="result"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
